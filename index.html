@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>COMINIDAD 5</title>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible"content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@400;500;600;700;800&family=Mukta:wght@800&display=swap" rel="stylesheet">
+
+
+
+
+   
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> 
+         
+
+<style>
+/*ESTILO DE FONDO ANIMADO*/
+:root {
+  --gradient: linear-gradient(-45deg,white, blue,black,blue,white );
+}
+
+
+/*cuerpo*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Baloo 2';
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background: black;
+    flex-wrap: wrap;
+}
+/*contenedor principal*/
+.card {
+    position: relative;
+    width: 300px;
+    height: 440px;
+    border-radius: 5px;
+    overflow: hidden;
+    transition: .5s;
+    margin: 15px 20px;
+    
+   min-height: 100%;
+  background-size: 300%;
+  background-image: var(--gradient);
+  -webkit-animation: bg-animation 20s infinite;
+          animation: bg-animation 20s infinite;
+}
+
+@-webkit-keyframes bg-animation {
+  0% {
+    background-position: left;
+  }
+  50% {
+    background-position: right;
+  }
+  100% {
+    background-position: left;
+  }
+}
+
+@keyframes bg-animation {
+  0% {
+    background-position: left;
+  }
+  50% {
+    background-position: right;
+  }
+  100% {
+    background-position: left;
+  }
+
+
+}
+
+
+
+.card:hover {
+    box-shadow: 0 5px 10px rgba(0,0,0,1);
+    transform: translateY(-20px);
+}
+/*contenedor de imágen*/
+.card .head {
+    height: 125px;
+    width: 100%;
+    position: relative;
+}
+
+.card .head .circle {
+    position: absolute;
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    background-image: url("https://i.ibb.co/ZBCcj6L/images-9.jpg"); background-size: 150px;
+    bottom:0;
+   
+}
+
+.card .head .img {
+    width: 150px;
+    height: 150px;
+    position: absolute;
+
+    background-image: var(--gradiente);
+  
+    --gradiente: linear-gradient(to bottom,black,black
+    );
+    padding: 3px;
+    border-radius:50%;
+    bottom: -30%;
+    left: 50%;
+    transform: translate(-50%);
+}
+
+.card .head .img img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+Img:hover {
+    
+background-image: var(--gradiente);
+  
+    --gradiente: linear-gradient(to top,purple,white
+    );
+     box-shadow: 0 5px 10px rgba(0,0,0,1);
+    transform: translateY(-20px);
+}
+
+
+
+
+/*contenedor del texto*/
+.card .description {
+    height: 180px;
+    padding: 40px 20px 20px 20px;
+    border-bottom: white solid 1px ;
+    text-align: center;
+}
+
+.card .description h2,h4,p,i{
+animation: animate 10s infinite linear;
+}
+@keyframes animate
+{
+    0%,100%{
+        color:black;
+    }
+    25%{
+        color: red;
+    }
+    50%{
+        color:deepskyblue;
+    }
+    75%{
+        color: white;
+    }
+}
+
+
+
+/*contenedor de redes sociales*/
+
+.card .contact {
+    width: 100%;
+    height: 75px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size:30px;
+    
+}
+
+    
+
+
+.card .contact a {
+    text-decoration: none;
+    color: #fff;
+  
+
+    padding: 5px 50px;
+    border-radius: 100%;
+    transition: .5s;  
+}
+
+.card .contact a:hover {
+    
+background-image: var(--gradiente);
+  
+    --gradiente: linear-gradient(to top,blue,black
+    );
+     box-shadow: 0 5px 5px rgba(0,0,0,1);
+    transform: translateY(-10px);
+}
+
+/*CATALOGO*/
+
+.CATALOGO{
+  position: relative;
+  left:45px;
+ display: center;
+  text-align:center;
+  color:white;
+  text-decoration:none;
+  Margin:1px;
+  width: 200px;
+  height:40px;
+  Padding:5px;
+  font-size: 20px;
+  border-radius: 20px;
+  border: 1px white solid;
+  box-shadow:0px 0px 10px 1px white;
+                  0px 0px 10px 5px white;
+  text-shadow: -2px 1px purple;
+  
+  min-height: 30px;
+  background-size: 300%;
+  background-image: var(--gradient);
+  -webkit-animation: bg-animation 20s infinite;
+          animation: bg-animation 20s infinite;
+  
+/*codigo de fondo animado*/
+  }
+  @-webkit-keyframes bg-animation {
+  0% {
+    background-position: left;
+  }
+  50% {
+    background-position: right;
+  }
+  100% {
+    background-position: left;
+  }
+}
+
+@keyframes bg-animation {
+  0% {
+    background-position: left;
+  }
+  50% {
+    background-position: right;
+  }
+  100% {
+    background-position: left;
+  }
+}
+
+
+
+</style>
+    </head>
+    <body>
+    <div class="card">
+        <div class="head">
+            <div class="circle"></div>
+            <div class="img">
+   <img src="https://i.ibb.co/sQTpHL8/FB-IMG-1666356805783.jpg
+   " alt="IMG20220730173828" border="0">
+            </div>
+        </div>
+            
+        
+        <div class="description">
+            <h2 class="text-animation">COMUNIDAD 5</h2>
+            
+            <H4>NORTEÑO BANDA</H4>
+            <p>AMENIZANOS TODO TIPO DE EVENTOS</P>
+        </div>
+        
+        <div class="contact"
+        >
+        <!--a href="tel: 3312381872"><i class="fa fa-phone"></i></a>
+
+        <a href="https://wa.me/qr/K3HPFDZLSFINP1
+        "><i class="fa fa-whatsapp"></i></a-->
+        
+        <a href="https://www.facebook.com/Comunidad5official
+        "><i class="fa fa-facebook"></i></a>
+        
+        <!--a href="http://tiktok.com/@felipemartinez5483
+        "><i class="fa fa-tiktok"></i></a-->
+      <a href="https://instagram.com/comunidad5oficial?igshid=YmMyMTA2M2Y=
+        "><i class="fa fa-instagram" aria-hidden="true"></i>
+            
+        </a>  
+        <a href="https://youtube.com/channel/UC1nFAEqgdZltGrHTpUbuXxA
+        
+        "><i class="fa fa-youtube"></i></a>
+        
+        
+        <!--a href="mailto:felipemartinez84@live.com.mx?Subject=bienvenido
+        "><i class="fa fa-envelope-open
+        "></i></a-->
+        
+
+
+
+
+        
+        
+        
+    </div>
+    
+    
+<div class="CATALOGO">
+
+ <a 
+      href="
+      "><i class="fa fa-hand-o-right
+      "> INTEGRANTES</i>
+</a>
+
+</div>
+        
+        
+    </body>
+</html>
+  
+    </body>
+</html>
